@@ -1,6 +1,6 @@
 # Tri-Cities EV Analysis Project
 
-This repository contains a data analysis project investigating electric vehicle adoption in the Tri-Cities region (Kennewick, Pasco, Richland) of Washington state. The project uses Washington State’s `Electric Vehicle Population Data` dataset (published by the Department of Licensing) as of July 19, 2025【75374942803867†L94-L99】.
+This repository contains a data analysis project investigating electric vehicle adoption in the Tri-Cities region (Kennewick, Pasco, Richland) of Washington state. The project uses Washington State’s `Electric Vehicle Population Data` dataset (published by the Department of Licensing) as of July 19, 2025.
 
 ## Project summary
 
@@ -27,4 +27,4 @@ The SQL commands used in the analysis are stored in [`queries.sql`](queries.sql)
 
 ## Dataset source
 
-The EV population dataset is provided by the Washington State Department of Licensing and is available on data.wa.gov【75374942803867†L94-L99】. It lists BEVs and PHEVs registered with the state, including fields such as make, model, model year, electric range, location and more.
+The EV population dataset is provided by the Washington State Department of Licensing and is available on [data.wa.gov](https://data.wa.gov). It lists BEVs and PHEVs registered with the state, including fields such as make, model, model year, electric range, location and more.

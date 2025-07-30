@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Tri‑Cities metropolitan area of Washington (Kennewick, Pasco and Richland) is part of a growing region that has been embracing electric vehicles (EVs).  Washington’s Department of Licensing publishes an **Electric Vehicle Population** dataset that lists all battery‑electric (BEV) and plug‑in hybrid electric vehicles (PHEV) registered in the state.  According to the dataset documentation, the resource shows **battery electric vehicles (BEVs) and plug‑in hybrid electric vehicles (PHEVs) currently registered through Washington State Department of Licensing (DOL)**【75374942803867†L94-L99】 and is updated regularly (metadata updated **July 19 2025**)【75374942803867†L94-L99】.  
+The Tri‑Cities metropolitan area of Washington (Kennewick, Pasco and Richland) is part of a growing region that has been embracing electric vehicles (EVs).  Washington’s Department of Licensing publishes an **Electric Vehicle Population** dataset that lists all battery‑electric (BEV) and plug‑in hybrid electric vehicles (PHEV) registered in the state.  According to the dataset documentation, the resource shows **battery electric vehicles (BEVs) and plug‑in hybrid electric vehicles (PHEVs) currently registered through Washington State Department of Licensing (DOL)** and is updated regularly (metadata updated **July 19 2025**).  
 
 This project uses SQL to explore EV adoption patterns within the Tri‑Cities area.  The aim is to determine how EV registrations vary by city and vehicle type, identify the top manufacturers, assess typical electric driving ranges, and understand how registrations have changed over model years.  By leveraging SQL, we can produce transparent, reproducible queries to answer these questions.
 
@@ -10,9 +10,9 @@ This project uses SQL to explore EV adoption patterns within the Tri‑Cities ar
 
 ### Dataset overview
 
-* **Source** – The dataset is published on Washington’s open data portal (data.wa.gov) and catalogued on Data.gov.  It contains BEVs and PHEVs registered through the Washington Department of Licensing【75374942803867†L94-L99】.  Each record represents an individual vehicle.  
-* **Fields** – Key columns include the first 10 characters of the VIN (`vin_1_10`), `county`, `city`, `state`, `zip_code`, `model_year`, `make`, `model`, `ev_type` (BEV or PHEV), `cafv_type` (clean alternative fuel vehicle eligibility), `electric_range` (EPA‑rated electric range in miles), `base_msrp`, `legislative_district`, `dol_vehicle_id`, `electric_utility` and the 2020 Census tract【75374942803867†L94-L99】.  
-* **Time frame** – The dataset includes vehicles currently registered; therefore, it reflects cumulative registrations through mid‑2025 (last modified July 15 2025)【75374942803867†L94-L99】.
+* **Source** – The dataset is published on Washington’s open data portal (data.wa.gov) and catalogued on Data.gov.  It contains BEVs and PHEVs registered through the Washington Department of Licensing.  Each record represents an individual vehicle.  
+* **Fields** – Key columns include the first 10 characters of the VIN (`vin_1_10`), `county`, `city`, `state`, `zip_code`, `model_year`, `make`, `model`, `ev_type` (BEV or PHEV), `cafv_type` (clean alternative fuel vehicle eligibility), `electric_range` (EPA‑rated electric range in miles), `base_msrp`, `legislative_district`, `dol_vehicle_id`, `electric_utility` and the 2020 Census tract.  
+* **Time frame** – The dataset includes vehicles currently registered; therefore, it reflects cumulative registrations through mid‑2025 (last modified July 15 2025).
 
 ### Data collection
 
@@ -134,7 +134,7 @@ ORDER BY model_year;
 
 ## Conclusion
 
-Using Washington’s **Electric Vehicle Population** dataset【75374942803867†L94-L99】, this SQL‑based project provides insights into EV adoption within the Tri‑Cities region.  The data show that:
+Using Washington’s **Electric Vehicle Population** dataset, this SQL‑based project provides insights into EV adoption within the Tri‑Cities region.  The data show that:
 
 * **BEVs dominate** the local market; more than three‑quarters of registered EVs are battery‑electric vehicles, reflecting strong consumer confidence in fully electric models.
 * **Tesla** is by far the most popular manufacturer, accounting for nearly half of all EVs.  Other leading brands include Ford, Chevrolet, Toyota and Nissan, but none approach Tesla’s volume.
